@@ -1,0 +1,366 @@
+
+@media (max-width: 768px) {
+
+    /* ---------- General ---------- */
+    img {
+        max-width: 100%;
+    }
+
+    /* desktop <br> line breaks look broken on phones */
+    .hero4p br,
+    .hero5p br,
+    .hero6p br,
+    .hero7p br,
+    .hero8p br,
+    .hero9p br,
+    .hero6h1 br,
+    .hero7h1 br,
+    .hero8h1 br {
+        display: none;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    /* top blue utility bar is hidden on phones */
+    .main1 {
+        display: none;
+    }
+
+    /* desktop: fixed with no width. mobile: sticky full-width bar */
+    .mainnavbar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .secondtopnavleft {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* row 1 left: logo */
+    .second1 {
+        order: 1;
+        padding: 0 0 0 16px;
+    }
+
+    .second1 svg {
+        width: 105px;
+        height: 58px;
+    }
+
+    /* row 1 right: search icon + Online Banking button */
+    .second3 {
+        order: 2;
+        gap: 10px;
+        padding-right: 16px;
+    }
+
+    .second3ii {
+        width: 115px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    /* row 2: menu links become a swipeable strip */
+    .second2 {
+        order: 3;
+        flex-basis: 100%;
+        gap: 22px;
+        font-size: 14px;
+        padding: 10px 16px;
+        border-top: 1px solid #e3e6e8;
+        box-sizing: border-box;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .second2::-webkit-scrollbar {
+        display: none;
+    }
+
+    .second2>div {
+        flex-shrink: 0;
+    }
+
+    .second2 p {
+        margin: 0;
+    }
+
+    /* no dropdown arrows or dropdown menus on touch screens */
+    .second2 svg {
+        display: none;
+    }
+
+    .aboutus,
+    .media,
+    .careers,
+    .sustainability,
+    .Events,
+    .Legal {
+        display: none !important;
+    }
+
+    /* ---------- HERO 1 (main banner) ---------- */
+    .Hero1 {
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .Hero1 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* ---------- HERO 2 (stats) ---------- */
+    .hero2 {
+        flex-direction: column;
+        padding: 0 16px;
+        margin: 16px 12px 24px 12px;
+    }
+
+    .hero2-box {
+        margin: 14px 0;
+    }
+
+    .hero2-number {
+        font-size: 28px;
+        margin-top: 14px;
+    }
+
+    /* ---------- HERO 3 (banner) ---------- */
+    .hero3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero3 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* ---------- HERO 4 ---------- */
+    .hero4 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 16px;
+        margin: 24px 12px 0 12px;
+    }
+
+    .hero4i {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .hero4img {
+        width: 100%;
+        height: auto;
+        margin-top: 16px;
+    }
+
+    /* ---------- HERO 5 (history + leadership) ---------- */
+    .hero5 {
+        flex-direction: column;
+        padding: 0 16px;
+        margin: 24px 12px 0 12px;
+    }
+
+    .hero5i {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .heroimg5 {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ---------- HERO 6 ---------- */
+    .hero6 {
+        margin: 24px 12px 0 12px;
+        padding: 0 16px 20px 16px;
+    }
+
+    /* ---------- HERO 7 (purpose + promise) ---------- */
+    .hero7 {
+        flex-direction: column;
+        padding: 20px 16px;
+        margin: 24px 12px 0 12px;
+    }
+
+    .hero7ii {
+        margin-top: 10px;
+    }
+
+    /* ---------- HERO 8 (governance + 4 cards) ---------- */
+    .hero8 {
+        flex-direction: column;
+        padding: 20px 16px;
+        margin: 24px 12px 0 12px;
+    }
+
+    .hero8ii {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 24px;
+    }
+
+    /* .herob is the class used in your HTML for the 2nd card */
+    .hero8a,
+    .herob,
+    .hero8b,
+    .hero8c,
+    .hero8d {
+        width: 100%;
+        height: auto;
+    }
+
+    .ir,
+    .os,
+    .pm,
+    .c {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        box-sizing: border-box;
+        object-fit: cover;
+        display: block;
+    }
+
+    .ir {
+        border-radius: 20px;
+    }
+
+    .aii,
+    .bii,
+    .cii,
+    .dii {
+        padding-left: 0;
+        text-align: center;
+        font-size: 13px;
+        margin: 8px 0 0 0;
+    }
+
+    /* ---------- HERO 9 (vision + mission) ---------- */
+    .hero9 {
+        flex-direction: column;
+        padding: 20px 16px;
+        margin: 24px 12px 0 12px;
+    }
+
+    .hero9img {
+        width: 100%;
+        height: auto;
+        margin-top: 16px;
+    }
+
+    /* ---------- Headings and buttons ---------- */
+    .hero4h1,
+    .hero5h1,
+    .hero6h1,
+    .hero7h1,
+    .hero8h1,
+    .hero9h1 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    .hero4iii,
+    .hero5but,
+    .hero6but,
+    .hero7but,
+    .hero8but {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .navbar {
+        margin-top: 24px;
+        padding: 0 16px;
+    }
+
+    .footernavbari {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+        gap: 12px;
+        padding-bottom: 10px;
+    }
+
+    .icons {
+        margin-top: 20px;
+    }
+
+    .footerline1 {
+        width: 100%;
+    }
+
+    .footer-sections {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 16px;
+    }
+
+    .footer-end {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 0 0 16px 0;
+    }
+
+    .footer-end h5 {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+}
+
+/* ---------- Small phones (480px and below) ---------- */
+@media (max-width: 480px) {
+
+    .hero4h1,
+    .hero5h1,
+    .hero6h1,
+    .hero7h1,
+    .hero8h1,
+    .hero9h1 {
+        font-size: 21px;
+    }
+
+    .hero2-number {
+        font-size: 24px;
+    }
+
+    .hero8ii {
+        gap: 10px;
+    }
+
+    .ir,
+    .os,
+    .pm,
+    .c {
+        height: 100px;
+    }
+
+    .hero4iii,
+    .hero5but,
+    .hero6but,
+    .hero7but,
+    .hero8but {
+        max-width: 100%;
+    }
+}
